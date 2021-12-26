@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ip Address Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <div id="container">
+        <header>
+            <h1>IP Address Tracker</h1>
+            <form id="form">
+                <input type="text" name=""  value="" id="input">
+                <button id="submit" type="submit"><img src="./icons/icon-arrow.svg" alt=""></button>
+            </form>
+
+            <div id="display">
+                <div id="ip-bar" class="display-item">
+                    <h5>IP ADDRESS</h5>
+                    <div id="ip-display"></div>
+                </div>
+    
+                <div id="location-bar" class="display-item">
+                    <h5>LOCATION</h5>
+                    <p id="location-display"></p>
+                </div>
+                <div id="timezone-bar" class="display-item">
+                    <h5>IP TIMEZONE</h5>
+                    <p id="timezone-display"></p>
+                </div>
+                <div id="isp-bar" class="display-item">
+                    <h5>ISP</h5>
+                    <p id="isp-display">Lorem.</p>
+                </div>
+    
+            </div>
+
+        </header>
+
+        <div id="map-container">
+            <div id="mapid"></div>
+            <p id="pos"></p>
+        </div>
+
+       
+
+    </div>
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
